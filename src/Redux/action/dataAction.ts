@@ -1,21 +1,21 @@
+import { type } from "os";
 import { Dispatch } from "redux"
 import { data } from "../../data/mock"
-import { GET_DATA_TYPE } from "../types/getDataTypes"
+import { getDataActionType, getDataActionTypesEnum } from "../types/getDataTypes"
 
-export interface GetDataAction {
-    type: string;
-    payload: any;
-}
 
 export const getDataFetch = () => {
-    return (dispath: Dispatch<GetDataAction>) => {
+    return (dispath: Dispatch<getDataActionType>) => {
         try {
             dispath({
-                type: GET_DATA_TYPE,
+                type: getDataActionTypesEnum.GET_DATA,
                 payload: data,
             })
         } catch (e) {
-
+            dispath({
+                type: getDataActionTypesEnum.GET_DATA_ERROR,
+                payload: 'Данных нет',
+            })
         }
     }
 }
