@@ -6,8 +6,6 @@ import { getDataFetch } from "../../Redux/action/dataAction";
 export const Header: React.FC = () => {
     const { navigation } = useGetData()
     console.log(navigation);
-    const dispath = useDispatch<any>()
-        dispath(getDataFetch())
     return (
         <div>header</div>
     )
