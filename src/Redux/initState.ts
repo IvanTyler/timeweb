@@ -1,10 +1,11 @@
 import { IFetchData } from "../interfaces/interface.fetchData"
 
-export interface GetData {
+export interface IGetData {
     data: IFetchData,
+    error: null | string
 }
 
-export const initState: GetData = {
+export const initState: IGetData = {
     data: {
         navigation: [],
         mainFrame: {
@@ -22,5 +23,6 @@ export const initState: GetData = {
         info: [],
         labels: [],
         comments: [],
-    }
+    },
+    error: null,
 }
