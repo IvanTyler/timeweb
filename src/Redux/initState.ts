@@ -2,7 +2,6 @@ import { IFetchData } from "../interfaces/interface.fetchData"
 
 export interface IGetData {
     data: IFetchData,
-    error: null | string
 }
 
 export const initState: IGetData = {
@@ -24,5 +23,4 @@ export const initState: IGetData = {
         labels: [],
         comments: [],
     },
-    error: null,
 }
