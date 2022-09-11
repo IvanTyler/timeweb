@@ -6,6 +6,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import { Heading } from './Components/Heading/Heading';
+import { Info } from './Components/Info/info';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Header />
         </BrowserRouter>
         <Heading />
+        <Info />
       </Wrapper>
     </>
   )

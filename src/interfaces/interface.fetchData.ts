@@ -25,6 +25,7 @@ export interface IMainFrame {
 }
 
 export interface IInfo {
+    id: number,
     image: string;
     title: string;
     description: string;

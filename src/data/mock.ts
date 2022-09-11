@@ -31,12 +31,14 @@ export const data = {
   },
   info: [
     {
+      id: 1,
       image: "#",
       title: "Augue tincidunt vitae vulputate",
       description:
         "Lorem ipsum dolor sit amet arcu duis integer. Blandit erat turpis luctus scelerisque sed iaculis euismod sodales volutpat condimentum dictum curabitur aliquam.",
     },
     {
+      id: 2,
       image: "#",
       title: "Lectus tincidunt duis adipiscing",
       description:
