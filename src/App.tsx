@@ -8,8 +8,11 @@ import {
 import { Heading } from './Components/Heading/Heading';
 import { Info } from './Components/Info/info';
 import { Labels } from './Components/Labels/Labels';
+import { Comments } from './Components/Comments/Comments';
+import { useGetData } from './hooks/useGetData';
 
 function App() {
+  const { comments } = useGetData()
   return (
     <>
       <Wrapper>
@@ -19,6 +22,7 @@ function App() {
         <Heading />
         <Info />
         <Labels />
+        <Comments item={comments[0]}/>
       </Wrapper>
     </>
   )

@@ -8,7 +8,7 @@ import './Labels.style.scss'
 export const Labels: React.FC = () => {
     const { labels } = useGetData()
     return (
-        <section className="section-labels">
+        <section className="section-labels border-solid-bottom">
             <ul className="list-label">
                 <List
                     items={labels}
