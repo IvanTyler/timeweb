@@ -1,0 +1,110 @@
+@import url('../../assets/styles/mixins.scss');
+@import url('../../assets/styles/fonts.scss');
+
+.header {
+    padding-top: 36px;
+
+    @media (max-width: 1200px) {
+        padding-top: 0px;
+    }
+
+    .container-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 36.5px 0;
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+        }
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+        }
+
+        .logo-link {
+            margin-right: 64px;
+
+            @media (max-width: 1200px) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__nav {
+        @media (max-width: 1200px) {
+            margin-top: 5px;
+        }
+
+        .header-nav-menu {
+            display: flex;
+
+            @media (max-width: 510px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__item:not(:last-child) {
+                margin-right: 40px;
+
+                @media (max-width: 510px) {
+                    margin-right: 0;
+                }
+            }
+
+            &__item:not(:first-child) {
+                @media (max-width: 510px) {
+                    margin-top: 5px;
+                }
+            }
+
+            &__link {
+                color: #000;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 23px;
+                border-bottom: solid 1px;
+                font-family: 'DMSans-Regular';
+                transition: 0.2s;
+                &:hover {
+                    color: #1991eb;
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 1200px) {
+            margin-top: 15px;
+        }
+
+        .header-social-networks-list {
+            display: flex;
+            margin-right: 35px;
+
+            &__item:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__button-search {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url('../../assets/images/search.svg');
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}

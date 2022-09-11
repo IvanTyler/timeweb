@@ -25,12 +25,14 @@ export interface IMainFrame {
 }
 
 export interface IInfo {
+    id: number;
     image: string;
     title: string;
     description: string;
 }
 
 export interface ILabels {
+    id: number;
     title: string;
     subtitle: string;
 }

@@ -31,12 +31,14 @@ export const data = {
   },
   info: [
     {
+      id: 1,
       image: "#",
       title: "Augue tincidunt vitae vulputate",
       description:
         "Lorem ipsum dolor sit amet arcu duis integer. Blandit erat turpis luctus scelerisque sed iaculis euismod sodales volutpat condimentum dictum curabitur aliquam.",
     },
     {
+      id: 2,
       image: "#",
       title: "Lectus tincidunt duis adipiscing",
       description:
@@ -45,14 +47,17 @@ export const data = {
   ],
   labels: [
     {
+      id: 1,
       title: "+100",
       subtitle: "Mi aliquam dui tristique",
     },
     {
+      id: 2,
       title: "20K",
       subtitle: "Ut in bibendum elit platea",
     },
     {
+      id: 3,
       title: "40",
       subtitle: "Fames et ornare egestas hac",
     },
