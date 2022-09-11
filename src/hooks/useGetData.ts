@@ -2,6 +2,7 @@ import { useTypeSelector } from "./useTypeSelector";
 import { useDispatch } from "react-redux";
 import { getDataFetch } from "../Redux/action/dataAction";
 
+
 export const useGetData = () => {
     const dispath = useDispatch<any>()
     dispath(getDataFetch())
