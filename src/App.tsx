@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { Heading } from './Components/Heading/Heading';
 import { Info } from './Components/Info/info';
+import { Labels } from './Components/Labels/Labels';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </BrowserRouter>
         <Heading />
         <Info />
+        <Labels />
       </Wrapper>
     </>
   )

@@ -7,7 +7,7 @@ import './Info.scss';
 
 export const Info: React.FC = () => {
     const { info } = useGetData()
-
+    
     return (
         <section className="section-info border-solid-bottom">
             <ul className="list-info">
