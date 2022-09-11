@@ -1,9 +1,9 @@
 import React from "react";
-import { useGetData } from "../../hooks/useGetData";
-import { ILabels } from "../../interfaces/interface.fetchData";
+import { useGetData } from "../../Hooks/useGetData";
+import { ILabels } from "../../Interfaces/interface";
 import { LabelItem } from "../LabelItem/LabelItem";
 import List from "../List/List";
-import './Labels.style.scss'
+import "./Labels.style.scss";
 
 export const Labels: React.FC = () => {
     const { labels } = useGetData()

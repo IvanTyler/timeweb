@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { INavigation } from "../../interfaces/interface.fetchData";
+import { INavigation } from "../../Interfaces/interface";
 
 
 export const HeaderNavMenuItem: React.FC<INavigation> = ({ title, link }) => {

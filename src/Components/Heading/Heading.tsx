@@ -1,9 +1,9 @@
 import React from "react";
-import { useGetData } from "../../hooks/useGetData";
-import './Heading.scss'
+import { useGetData } from "../../Hooks/useGetData";
+import "./Heading.scss";
 import {
     arrowRight
-} from '../../assets/importsImags/importImgs'
+} from "../../assets/importsImags/importImgs"
 
 export const Heading: React.FC = () => {
     const { mainFrame } = useGetData()

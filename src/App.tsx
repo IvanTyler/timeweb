@@ -3,30 +3,32 @@ import './App.scss';
 import { Header } from './Components/Header/Header';
 import { Container } from './Components/Container/Container';
 import { Heading } from './Components/Heading/Heading';
-import { Info } from './Components/Info/info';
 import { Labels } from './Components/Labels/Labels';
 import { Comments } from './Components/Comments/Comments';
-import { useGetData } from './hooks/useGetData';
+import { useGetData } from './Hooks/useGetData';
+import { Info } from './Components/Info/info';
 import {
   BrowserRouter,
 } from "react-router-dom";
-import { useTypeSelector } from './hooks/useTypeSelector';
+import { useError } from './Hooks/useError';
 
 function App() {
   const { comments } = useGetData()
-  const state = useTypeSelector(state => state.data.data)
+  const { error } = useError()
   return (
     <>
-      {state ? <Container>
-        <BrowserRouter>
-          <Header />
-        </BrowserRouter>
-        <Heading />
-        <Info />
-        <Labels />
-        <Comments item={comments[0]} />
-      </Container>
-        : <p>{state}</p>}
+      {!error ?
+        <Container>
+          <BrowserRouter>
+            <Header />
+          </BrowserRouter>
+          <Heading />
+          <Info />
+          <Labels />
+          <Comments item={comments[0]} />
+        </Container>
+        : <p>{error}</p>
+      }
     </>
   )
 }

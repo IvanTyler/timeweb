@@ -1,6 +1,6 @@
 import React from "react";
-import { IInfo } from "../../interfaces/interface.fetchData";
-import './InfoItem.scss';
+import { IInfo } from "../../Interfaces/interface";
+import "./InfoItem.scss";
 
 interface InfoItemProps {
     info: IInfo,

@@ -1,9 +1,9 @@
 import React from "react";
-import { useGetData } from "../../hooks/useGetData";
-import { IInfo } from "../../interfaces/interface.fetchData";
+import { useGetData } from "../../Hooks/useGetData";
+import { IInfo } from "../../Interfaces/interface";
 import { InfoItem } from "../InfoItem/InfoItem";
 import List from "../List/List";
-import './Info.scss';
+import "./Info.scss";
 
 export const Info: React.FC = () => {
     const { info } = useGetData()

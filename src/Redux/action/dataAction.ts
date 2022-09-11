@@ -1,5 +1,5 @@
 import { Dispatch } from "redux"
-import { data } from "../../data/mock"
+import { data } from "../../Data/mock"
 import { getDataActionType, getDataActionTypesEnum } from "../types/getDataTypes"
 
 export const getDataFetch = () => {
@@ -12,7 +12,7 @@ export const getDataFetch = () => {
         } catch (e) {
             dispath({
                 type: getDataActionTypesEnum.GET_DATA_ERROR,
-                payload: 'Ошибка данных',
+                payload: 'Ошибка, данных нет',
             })
         }
     }

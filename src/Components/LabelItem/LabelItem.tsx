@@ -1,7 +1,7 @@
 import React from "react";
 
-import { ILabels } from "../../interfaces/interface.fetchData";
-import './LabelItem.scss';
+import { ILabels } from "../../Interfaces/interface";
+import "./LabelItem.scss";
 
 interface LabelItemProps {
     label: ILabels,

@@ -1,10 +1,10 @@
 import React from "react";
-import { IComments } from "../../interfaces/interface.fetchData";
-import './Comments.scss'
+import { IComments } from "../../Interfaces/interface";
+import "./Comments.scss"
 import {
     star,
     user
-} from '../../assets/importsImags/importImgs'
+} from "../../assets/importsImags/importImgs"
 
 interface CommentsProps {
     item: IComments,

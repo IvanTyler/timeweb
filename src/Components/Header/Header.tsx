@@ -1,13 +1,13 @@
 import React from "react";
-import { useGetData } from "../../hooks/useGetData";
-import './Header.scss'
+import { useGetData } from "../../Hooks/useGetData";
+import "./Header.scss"
 import {
     logo,
     facebook,
     twitter,
     linkedin,
     youtube
-} from '../../assets/importsImags/importImgs'
+} from "../../assets/importsImags/importImgs"
 import { HeaderNavMenuItem } from "../HeaderNavMenuItem/HeaderNavMenuItem";
 
 export const Header: React.FC = () => {
@@ -28,7 +28,7 @@ export const Header: React.FC = () => {
                                         title={item.title}
                                         link={item.link}
                                     />
-                                }) : <p>Данных нет</p>
+                                }) : <p>Список отсутствует</p>
                             }
                         </ul>
                     </nav>

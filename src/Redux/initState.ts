@@ -1,4 +1,4 @@
-import { IFetchData } from "../interfaces/interface.fetchData"
+import { IFetchData } from "../Interfaces/interface"
 
 export interface IGetData {
     data: IFetchData,
